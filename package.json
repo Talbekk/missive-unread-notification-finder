@@ -1,0 +1,14 @@
+{
+  "name": "missive-unread-notification-finder",
+  "version": "1.0.0",
+  "description": "A script that will find any unread messages on Missive, which can be difficult to get rid of.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Michael Campbell",
+  "license": "MIT",
+  "type": "commonjs"
+}
