@@ -1,18 +1,10 @@
 import dotenv from 'dotenv';
+import { fetchUnreadNotifications } from './fetchUnreadNotifications';
 
-// Load .env file into process.env
 dotenv.config();
 
-// Access variables with full type support
-const apiKey: string | undefined = process.env.MISSIVE_API_KEY;
+const main = async (): Promise<void> => {
+  await fetchUnreadNotifications();
+};
 
-if (!apiKey) {
-  throw new Error('Missing required environment variables');
-}
-
-export const getUnreadNotificationCount = async (): Promise<string> => {
-    console.log(`hey`);
-    return 'hello';
-}
-
-getUnreadNotificationCount();
+main();
